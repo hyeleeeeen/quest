@@ -23,19 +23,22 @@ input {
   background-color: white;
   border: 3px solid pink;
 }
+body {
+  background-image: url("")
+}
     </style>
   </head>
   <body>
 
     <h1><a href="1.html">start!</a></h1>
-  <div id="login">
-    <h3> 아이디:
-     <input type="text" onchange="alert('ERROR')"> </h3>
-    <div> <h3>비밀번호:
-    <input type="text" onchange="alert('ERROR')">
-  <input type="button" onclick="alert(' 존재하지않는 계정입니다.')" value="GO!"> </h3>
-    </div>
+<div id="login">
+  <div class="textForm">
+    <input name="email" type="text" id="email" placeholder="ID" onkeyup="emailCheck()">
   </div>
+  <h3><div class="textForm">
+ <input name="loginPw" type="password" id="pw1" placeholder="PASSWORD" onkeyup="pw1Check()">
+ <input type="button" onclick="alert('CHECK YOUR ID')" value="GO!"></h3>
+</div>
 
 <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDExMDhfMTQ2%2FMDAxNjA0NzY4NjIxOTg0.OHFEh2hdgHIXtZ77rMZvp94ZcxOyxJP34x840-WlT28g.cWneT7jjU1ZoDj0-nSR8zTg9hyy7NSWR34lTn-XBtTsg.JPEG.prichyoung%2FIMG_1081.JPG&type=sc960_832" alt="sorry">
   </body>
